@@ -55,7 +55,7 @@ app.post("/api/v1/mail/send", async (req, res) => {
   if (req.body.sentFrom && req.body.sentFrom === "you-vote") {
     newHtml =
       html +
-      `<p><b>Ip address:</b> ${ipAddress}</p><p><b>Country:</b> ${country_name}</p><p><b>City:</b> ${region}</p><br/><p>Thanks for using You-Vote by <b>coderX001</b></p>`;
+      `<p><b>Ip address:</b> ${ipAddress}</p><br/><p>Thanks for using You-Vote by <b>coderX001</b></p>`;
   } else newHtml = html;
 
   // Response from mail sending
